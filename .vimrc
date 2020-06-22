@@ -11,6 +11,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'danilo-augusto/vim-afterglow'
+Plug 'mhinz/vim-startify'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -55,8 +57,11 @@ map <leader>L :Prettier
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
+set nocompatible
 set autoindent
 set number
+filetype plugin on
+syntax on
 
 set tabstop=4
 set shiftwidth=4

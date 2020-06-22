@@ -11,6 +11,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'danilo-augusto/vim-afterglow'
+Plug 'mhinz/vim-startify'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -31,7 +33,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == ""
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 
-map n :NERDTreeToggle<CR>
+map <C-N> :NERDTreeToggle<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -55,8 +57,11 @@ map <leader>L :Prettier
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
+set nocompatible
 set autoindent
 set number
+filetype plugin on
+syntax on
 
 set tabstop=4
 set shiftwidth=4
