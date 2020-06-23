@@ -19,11 +19,10 @@ Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 
 call plug#end()
 
+set t_Co=256
+set termguicolors
 colorscheme challenger_deep
 let g:airline_theme = 'challenger_deep'
-
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE
 
 autocmd vimenter * NERDTree
 
@@ -36,16 +35,14 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == ""
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 
-map <C-N> :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 execute "set t_8f=\e[38;2;%lu;%lu;%lum"
 execute "set t_8b=\e[48;2;%lu;%lu;%lum"
-set termguicolors
 
 set encoding=UTF-8
-set guifont=JetBrainsMono\ 9
 
 let g:airline_powerline_fonts = 1
 
@@ -53,6 +50,11 @@ noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
+
+noremap <C-Left> <C-w>h
+noremap <C-Down> <C-w>j
+noremap <C-Up> <C-w>k
+noremap <C-Right> <C-w>l
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 map <leader>L :Prettier
