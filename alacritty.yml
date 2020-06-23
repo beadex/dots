@@ -1,21 +1,21 @@
 font:
   # The normal (roman) font face to use.
   normal:
-    family: Hack Nerd Font Mono
+    family: FiraCode Nerd Font Mono
     # Style can be specified to pick a specific face.
-    style: Regular
+    style: Retina
 
   # The bold font face
   bold:
-    family: Hack Nerd Font Mono
+    family: FiraCode Nerd Font Mono
     # Style can be specified to pick a specific face.
-    # style: Bold
+    style: Bold
 
   # The italic font face
   italic:
-    family: Hack Nerd Font Mono
+    family: FiraCode Nerd Font Mono
     # Style can be specified to pick a specific face.
-    # style: Italic
+    style: Italic
 
 # Colors (Tomorrow Night Bright)
 #colors:
@@ -183,53 +183,82 @@ font:
   #  cyan:    '0x4fb8cc'
   #  white:   '0xf1f1f1'
 
+    # colors:
+    #   # Default colors
+    #   primary:
+    #     background: '0x2c2c2c'
+    #     foreground: '0xd6d6d6'
+    # 
+    #     dim_foreground:    '0xdbdbdb'
+    #     bright_foreground: '0xd9d9d9'
+    #     dim_background:    '0x202020' # not sure
+    #     bright_background: '0x3a3a3a' # not sure
+    # 
+    #   # Cursor colors
+    #   cursor:
+    #     text:   '0x2c2c2c'
+    #     cursor: '0xd9d9d9'
+    # 
+    #   # Normal colors
+    #   normal:
+    #     black:   '0x1c1c1c'
+    #     red:     '0xbc5653'
+    #     green:   '0x909d63'
+    #     yellow:  '0xebc17a'
+    #     blue:    '0x7eaac7'
+    #     magenta: '0xaa6292'
+    #     cyan:    '0x86d3ce'
+    #     white:   '0xcacaca'
+    # 
+    #   # Bright colors
+    #   bright:
+    #     black:   '0x636363'
+    #     red:     '0xbc5653'
+    #     green:   '0x909d63'
+    #     yellow:  '0xebc17a'
+    #     blue:    '0x7eaac7'
+    #     magenta: '0xaa6292'
+    #     cyan:    '0x86d3ce'
+    #     white:   '0xf7f7f7'
+    # 
+    #   # Dim colors
+    #   dim:
+    #     black:   '0x232323'
+    #     red:     '0x74423f'
+    #     green:   '0x5e6547'
+    #     yellow:  '0x8b7653'
+    #     blue:    '0x556b79'
+    #     magenta: '0x6e4962'
+    #     cyan:    '0x5c8482'
+    #     white:   '0x828282'
+ 
+# Colors (Challenger Deep)
 colors:
   # Default colors
   primary:
-    background: '0x2c2c2c'
-    foreground: '0xd6d6d6'
-
-    dim_foreground:    '0xdbdbdb'
-    bright_foreground: '0xd9d9d9'
-    dim_background:    '0x202020' # not sure
-    bright_background: '0x3a3a3a' # not sure
-
-  # Cursor colors
+    background: '0x1e1c31'
+    foreground: '0xcbe1e7'
+  # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text:   '0x2c2c2c'
-    cursor: '0xd9d9d9'
-
+    text: '0xff271d'
+    cursor: '0xfbfcfc'
   # Normal colors
   normal:
-    black:   '0x1c1c1c'
-    red:     '0xbc5653'
-    green:   '0x909d63'
-    yellow:  '0xebc17a'
-    blue:    '0x7eaac7'
-    magenta: '0xaa6292'
-    cyan:    '0x86d3ce'
-    white:   '0xcacaca'
-
+    black:   '0x141228'
+    red:     '0xff5458'
+    green:   '0x62d196'
+    yellow:  '0xffb378'
+    blue:    '0x65b2ff'
+    magenta: '0x906cff'
+    cyan:    '0x63f2f1'
+    white:   '0xa6b3cc'
   # Bright colors
   bright:
-    black:   '0x636363'
-    red:     '0xbc5653'
-    green:   '0x909d63'
-    yellow:  '0xebc17a'
-    blue:    '0x7eaac7'
-    magenta: '0xaa6292'
-    cyan:    '0x86d3ce'
-    white:   '0xf7f7f7'
-
-  # Dim colors
-  dim:
-    black:   '0x232323'
-    red:     '0x74423f'
-    green:   '0x5e6547'
-    yellow:  '0x8b7653'
-    blue:    '0x556b79'
-    magenta: '0x6e4962'
-    cyan:    '0x5c8482'
-    white:   '0x828282'
-
-background_opacity: 0.9
+    black:   '0x565575'
+    red:     '0xff8080'
+    green:   '0x95ffa4'
+    yellow:  '0xffe9aa'
+    blue:    '0x91ddff'
+    magenta: '0xc991e1'
+    cyan:    '0xaaffe4'
+    white:   '0xcbe3e7'

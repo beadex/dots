@@ -13,11 +13,14 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 
 call plug#end()
 
-colorscheme afterglow
-let g:airline_theme = 'afterglow'
+colorscheme challenger_deep
+let g:airline_theme = 'challenger_deep'
 
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE
