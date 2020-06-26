@@ -16,13 +16,17 @@ Plug 'vimwiki/vimwiki'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'franbach/miramare'
 
 call plug#end()
 
 set t_Co=256
 set termguicolors
-colorscheme challenger_deep
-let g:airline_theme = 'challenger_deep'
+let g:miramare_enable_italic = 1
+let g:miramare_disable_italic_comment = 1
+
+colorscheme miramare
+let g:airline_theme = 'miramare'
 
 autocmd vimenter * NERDTree
 
