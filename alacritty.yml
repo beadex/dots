@@ -1,27 +1,21 @@
 font:
   # The normal (roman) font face to use.
   normal:
-    family: FiraCode Nerd Font Mono
+    family: SFMono Nerd Font
     # Style can be specified to pick a specific face.
-    style: Retina
+    style: Regular
 
   # The bold font face
   bold:
-    family: FiraCode Nerd Font Mono
+    family: SFMono Nerd Font
     # Style can be specified to pick a specific face.
     style: Bold
 
   # The italic font face
   italic:
-    family: FiraCode Nerd Font Mono
+    family: SFMono Nerd Font
     # Style can be specified to pick a specific face.
     style: Italic
-window:
-        gtk_theme_variant: dark
-
-background_opacity: 0.9
-background_blur: true
-
 # Colors (Gruvbox dark)
 colors:
   # Default colors

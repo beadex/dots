@@ -17,10 +17,10 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'franbach/miramare'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
-set t_Co=256
 set termguicolors
 let g:miramare_enable_italic = 1
 let g:miramare_disable_italic_comment = 1
