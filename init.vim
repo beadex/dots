@@ -5,8 +5,6 @@ Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
-Plug 'chriskempson/base16-vim'
-Plug 'reedes/vim-colors-pencil'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -15,11 +13,10 @@ Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'franbach/miramare'
 Plug 'sheerun/vim-polyglot'
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'flazz/vim-colorschemes'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
@@ -27,9 +24,8 @@ set termguicolors
 let g:miramare_enable_italic = 1
 let g:miramare_disable_italic_comment = 1
 
-colorscheme dracula
-let g:airline_theme = 'dracula'
-
+colorscheme nord
+let g:airline_theme = 'nord'
 autocmd vimenter * NERDTree
 
 autocmd StdinReadPre * let s:std_in=1
