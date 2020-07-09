@@ -18,6 +18,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'franbach/miramare'
 Plug 'sheerun/vim-polyglot'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
@@ -25,8 +27,8 @@ set termguicolors
 let g:miramare_enable_italic = 1
 let g:miramare_disable_italic_comment = 1
 
-colorscheme miramare
-let g:airline_theme = 'miramare'
+colorscheme dracula
+let g:airline_theme = 'dracula'
 
 autocmd vimenter * NERDTree
 
