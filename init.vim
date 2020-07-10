@@ -17,15 +17,20 @@ Plug 'franbach/miramare'
 Plug 'sheerun/vim-polyglot'
 Plug 'flazz/vim-colorschemes'
 Plug 'arcticicestudio/nord-vim'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 call plug#end()
 
+set t_Co=256
+set cursorline
 set termguicolors
 let g:miramare_enable_italic = 1
 let g:miramare_disable_italic_comment = 1
 
-colorscheme nord
-let g:airline_theme = 'nord'
+colorscheme onehalfdark
+let g:airline_theme = 'onehalfdark'
+
+let NERDTreeShowHidden=1
 autocmd vimenter * NERDTree
 
 autocmd StdinReadPre * let s:std_in=1
@@ -43,6 +48,12 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 execute "set t_8f=\e[38;2;%lu;%lu;%lum"
 execute "set t_8b=\e[48;2;%lu;%lu;%lum"
+
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 
 set encoding=UTF-8
 
@@ -155,5 +166,5 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-let g:NERDTreeIgnore = ['^node_modules$']
+let g:NERDTreeIgnore = ['^node_modules$', '^.git$', '^.idea$']
 
