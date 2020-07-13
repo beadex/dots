@@ -17,18 +17,31 @@ Plug 'franbach/miramare'
 Plug 'sheerun/vim-polyglot'
 Plug 'flazz/vim-colorschemes'
 Plug 'arcticicestudio/nord-vim'
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
 set t_Co=256
 set cursorline
-set termguicolors
-let g:miramare_enable_italic = 1
-let g:miramare_disable_italic_comment = 1
 
-colorscheme onehalfdark
-let g:airline_theme = 'onehalfdark'
+if (empty($TMUX))
+  if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
+
+hi! Normal ctermbg=NONE guibg=NONE
+hi! NonText ctermbg=NONE guibg=NONE
+
+let g:onedark_termcolors=256
+let g:onedark_terminal_italics=1
+
+syntax on
+colorscheme onedark
+let g:airline_theme = 'onedark'
 
 let NERDTreeShowHidden=1
 autocmd vimenter * NERDTree
@@ -79,7 +92,7 @@ set nocompatible
 set autoindent
 set number
 filetype plugin on
-syntax on
+
 
 set tabstop=4
 set shiftwidth=4
