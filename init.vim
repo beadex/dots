@@ -88,7 +88,6 @@ map <leader>L :Prettier
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
-set nocompatible
 set autoindent
 set number
 filetype plugin on
