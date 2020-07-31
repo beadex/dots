@@ -23,7 +23,6 @@ call plug#end()
 
 set t_Co=256
 set cursorline
-
 if (empty($TMUX))
   if (has("nvim"))
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -33,8 +32,8 @@ if (empty($TMUX))
   endif
 endif
 
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE
+au ColorScheme * hi Normal ctermbg=none guibg=none
+au ColorScheme * hi NonText ctermbg=none guibg=none
 
 let g:onedark_termcolors=256
 let g:onedark_terminal_italics=1
