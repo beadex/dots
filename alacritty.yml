@@ -1,20 +1,17 @@
 font:
     # The normal (roman) font face to use.
     normal:
-        family: SFMono Nerd Font
-        # Style can be specified to pick a specific face.
+        family: Haskplex Nerd
         style: Regular
 
     # The bold font face
     bold:
-        family: SFMono Nerd Font
-        # Style can be specified to pick a specific face.
+        family: Haskplex Nerd
         style: Bold
 
     # The italic font face
     italic:
-        family: SFMono Nerd Font
-        # Style can be specified to pick a specific face.
+        family: Haskplex Nerd
         style: Italic
 # Colors (One Dark)
 colors:
@@ -44,3 +41,12 @@ colors:
         magenta: "0xc678dd"
         cyan: "0x56b6c2"
         white: "0xffffff"
+
+bell:
+  animation: EaseOutExpo
+  duration: 0
+
+background_opacity: 0.95
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
