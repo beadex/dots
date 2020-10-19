@@ -28,6 +28,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'arcticicestudio/nord-vim'
 Plug 'joshdick/onedark.vim'
 Plug 'bagrat/vim-buffet'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
@@ -49,8 +50,8 @@ au ColorScheme * hi Normal ctermbg=none guibg=none
 au ColorScheme * hi NonText ctermbg=none guibg=none
 
 syntax on
-colorscheme onedark
-let g:airline_theme = 'onedark'
+colorscheme nord
+let g:airline_theme = 'nord'
 
 let NERDTreeShowHidden=1
 
