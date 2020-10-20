@@ -2,8 +2,6 @@
 Dotfiles to conquer.
 
 ![fullscreen](images/fullscreen.png)
-![desktop](images/i3-gaps.png)
-![nvim-alacritty](images/nvim.png)
 
 ### Setup
 - OS: [Manjaro 20.1 Mikah](https://manjaro.org/)
