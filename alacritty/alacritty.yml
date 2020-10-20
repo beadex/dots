@@ -3,16 +3,15 @@ font:
     normal:
         family: SFMono Nerd Font
         style: Regular
-
     # The bold font face
     bold:
         family: SFMono Nerd Font
         style: Bold
-
     # The italic font face
     italic:
         family: SFMono Nerd Font
         style: Italic
+    size: 10
 colors:
   primary:
     background: '#2e3440'
