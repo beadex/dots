@@ -2,7 +2,7 @@
 
 ## Created By Aditya Shakya
 
-MENU="$(rofi -sep "|" -dmenu -i -p 'System' -location 3 -yoffset 32 -xoffset -10 -width 12 -hide-scrollbar -line-padding 4 -padding 20 -lines 5 -font "SFMono Nerd Font 10" <<< " Lock| Logout| Suspend| Reboot| Shutdown")"
+MENU="$(rofi -sep "|" -dmenu -i -p 'System' -location 3 -yoffset 32 -xoffset -10 -width 12 -hide-scrollbar -line-padding 4 -padding 20 -lines 5 -font "San Francisco Text 10" <<< "  Lock|  Logout|  Suspend|  Reboot|  Shutdown")"
             case "$MENU" in
                 *Lock) i3exit lock;;
                 *Logout) i3exit logout;;
