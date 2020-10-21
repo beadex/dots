@@ -47,6 +47,9 @@ let g:onedark_terminal_italics=1
 
 au ColorScheme * hi Normal ctermbg=none guibg=none
 au ColorScheme * hi NonText ctermbg=none guibg=none
+au ColorScheme * highlight clear CursorLineNR
+au ColorScheme * highlight clear LineNr
+au ColorScheme * highlight clear SignColumn
 
 syntax on
 colorscheme nord
