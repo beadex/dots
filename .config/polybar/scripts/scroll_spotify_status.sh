@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # see man zscroll for documentation of the following parameters
-zscroll -l 120 \
-        --delay 0.1 \
+zscroll -l 30 \
+        --delay 0.5 \
         --match-command "playerctl --player=playerctld status" \
         --match-text "Playing" "--scroll 1" \
         --match-text "Paused" "--scroll 0" \
