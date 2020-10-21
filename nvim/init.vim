@@ -16,7 +16,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'airblade/vim-gitgutter'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
@@ -71,6 +70,9 @@ endif
 set encoding=UTF-8
 
 let g:airline_powerline_fonts = 1
+
+nnoremap <C-p> :GFiles<CR>
+nnoremap <leader><leader> :Rg<CR>
 
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
