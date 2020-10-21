@@ -1,3 +1,9 @@
+env:
+  TERM: xterm-256color
+window:
+  padding:
+    x: 10
+    y: 10
 font:
     # The normal (roman) font face to use.
     normal:
@@ -11,7 +17,11 @@ font:
     italic:
         family: SFMono Nerd Font
         style: Italic
-    size: 10
+    size: 9
+    offset:
+      x: 0
+      y: 1
+draw_bold_text_with_bright_colors: true
 colors:
   primary:
     background: '#2e3440'
