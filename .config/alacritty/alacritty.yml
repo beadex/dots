@@ -17,7 +17,7 @@ font:
     italic:
         family: SFMono Nerd Font
         style: Italic
-    size: 9
+    size: 10
     offset:
       x: 0
       y: 1
@@ -70,4 +70,3 @@ colors:
     magenta: '#8c738c'
     cyan: '#6d96a5'
     white: '#aeb3bb'
-background_opacity: 0.9
