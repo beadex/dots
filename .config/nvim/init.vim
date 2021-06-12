@@ -12,6 +12,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'arcticicestudio/nord-vim'
+Plug 'ghifarit53/tokyonight-vim'
 
 call plug#end()
 
@@ -36,8 +37,13 @@ au ColorScheme * highlight clear LineNr
 au ColorScheme * highlight clear SignColumn
 
 syntax on
-colorscheme nord
-let g:airline_theme = 'nord'
+
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+
+colorscheme tokyonight
+
+let g:airline_theme = "tokyonight"
 
 let NERDTreeShowHidden=1
 
